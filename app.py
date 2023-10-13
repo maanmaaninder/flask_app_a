@@ -12,6 +12,7 @@ def home_page():
 def math_ops():
     if(request.method == 'POST'):
         ops = request.form['operation']
+        
         num1 = int(request.form['num1'])
         num2 = int(request.form['num2'])
         if ops == 'add':
